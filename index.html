@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <div class="menu-icon">
+          <img src="images/menu-icon.png" alt="Menu Icon" />
+        </div>
+        <ul>
+          <li><a href="#apartment-details">פרטי הדירה</a></li>
+          <li><a href="#documents">מסמכים</a></li>
+          <li><a href="#updates">עדכונים</a></li>
+          <li><a href="#status">סטטוס</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#statistics">סטטיסטיקה</a></li>
+        </ul>
+      </nav>
+      <div class="project-name">project Name</div>
+
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" />
+      </div>
+    </header>
+
+    <main>
+      <section id="apartment-details">
+        <h2>פרטי הדירה</h2>
+        <div class="building-number">
+          <p>מספר בניין:</p>
+          <p>123</p>
+        </div>
+        <div class="entrance">
+          <p>כניסה:</p>
+          <p>א</p>
+        </div>
+        <div class="floor">
+          <p>קומה:</p>
+          <p>3</p>
+        </div>
+        <div class="house-number">
+          <p>מספר דירה:</p>
+          <p>7</p>
+        </div>
+      </section>
+
+      <section id="documents">
+        <h2>מסמכים</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>כותרת</th>
+              <th>תיאור מקצועי</th>
+              <th>סוג קובץ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/personal-icon.png" alt="Personal Icon" />
+              </td>
+              <td>כותרת מסמך 1</td>
+              <td>תיאור מקצועי של מסמך 1</td>
+              <td><img src="images/pdf-icon.png" alt="PDF Icon" /></td>
+            </tr>
+            <tr>
+              <td><img src="images/group-icon.png" alt="Group Icon" /></td>
+              <td>כותרת מסמך 2</td>
+              <td>תיאור מקצועי של מסמך 2</td>
+              <td><img src="images/image-icon.png" alt="Image Icon" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="updates">
+        <h2>עדכונים</h2>
+        <div class="card">
+          <h3>כותרת העדכון הראשון</h3>
+          <p>
+            פרטי העדכון הראשון יוצגו כאן. עדכון זה נוסף בתאריך 1 בינואר 2023.
+          </p>
+          <a href="#">קרא עוד</a>
+        </div>
+        <div class="card">
+          <h3>כותרת העדכון השני</h3>
+          <p>
+            פרטי העדכון השני יוצגו כאן. עדכון זה נוסף בתאריך 15 בפברואר 2023.
+          </p>
+          <a href="#">קרא עוד</a>
+        </div>
+        <div class="card">
+          <h3>כותרת העדכון השלישי</h3>
+          <p>פרטי העדכון השלישי יוצגו כאן. עדכון זה נוסף בתאריך 1 במרץ 2023.</p>
+          <a href="#">קרא עוד</a>
+        </div>
+      </section>
+
+      <section id="status">
+        <h2>סטטוס</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge">1</div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">כותרת אירוע 1</h4>
+                <p><small class="text-muted">20/06/2023</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>תיאור אירוע 1</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">2</div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">כותרת אירוע 2</h4>
+                <p><small class="text-muted">15/06/2023</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>תיאור אירוע 2</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">3</div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">כותרת אירוע 3</h4>
+                <p><small class="text-muted">10/06/2023</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>תיאור אירוע 3</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="gallery">
+        <h2>גלריה</h2>
+        <div class="gallery-items">
+          <div class="gallery-item">
+            <div class="gallery-item-text-content">
+              <div class="gallery-item-name">שם התמונה 1</div>
+              <div class="gallery-item-description">תיאור התמונה 1</div>
+            </div>
+            <img src="images/image1.jpg" alt="Image 1" />
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-text-content">
+              <div class="gallery-item-name">שם התמונה 2</div>
+              <div class="gallery-item-description">תיאור התמונה 2</div>
+            </div>
+            <img src="images/image2.jpg" alt="Image 2" />
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-text-content">
+              <div class="gallery-item-name">שם התמונה 3</div>
+              <div class="gallery-item-description">תיאור התמונה 3</div>
+            </div>
+            <img src="images/image1.jpg" alt="Image 1" />
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item-text-content">
+              <div class="gallery-item-name">שם התמונה 4</div>
+              <div class="gallery-item-description">תיאור התמונה 4</div>
+            </div>
+            <img src="images/image2.jpg" alt="Image 2" />
+          </div>
+        </div>
+      </section>
+
+      <section id="statistics">
+        <h2>סטטיסטיקה</h2>
+        <div class="chart">
+          <div class="column">
+            <div class="chart-label">סוג 1</div>
+            <div class="chart-bar" style="height: 80%"></div>
+          </div>
+          <div class="column">
+            <div class="chart-label">סוג 2</div>
+            <div class="chart-bar" style="height: 60%"></div>
+          </div>
+          <div class="column">
+            <div class="chart-label">סוג 3</div>
+            <div class="chart-bar" style="height: 40%"></div>
+          </div>
+          <div class="column">
+            <div class="chart-label">סוג 4</div>
+            <div class="chart-bar" style="height: 20%"></div>
+          </div>
+          <div class="column">
+            <div class="chart-label">סוג 5</div>
+            <div class="chart-bar" style="height: 10%"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>כל הזכויות שמורות לפרויקט שם © 2023</p>
+        <ul>
+          <li><a href="#">תקנון</a></li>
+          <li><a href="#">פרטיות</a></li>
+          <li><a href="#">צור קשר</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
