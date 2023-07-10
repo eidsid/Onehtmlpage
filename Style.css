@@ -93,7 +93,7 @@ nav.menu a:hover {
     padding: 10px;
     transition: 0.8s all ease-in-out;
   }
-  nav.menu ul li {
+  nav.menu ul li a {
     color: #ffffff;
   }
   nav.menu.close ul {
