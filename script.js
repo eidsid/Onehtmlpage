@@ -44,3 +44,59 @@ const lazyObserver = new IntersectionObserver((entries, observer) => {
 lazyImages.forEach((lazyImage) => {
   lazyObserver.observe(lazyImage);
 });
+// to top button
+const toTopBtn = document.getElementById("to-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    toTopBtn.classList.add("show");
+  } else {
+    toTopBtn.classList.remove("show");
+  }
+});
+
+toTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// for chart
+const barColors = "gray";
+const xValues = ["סוג 1", "סוג 2", "סוג 3", "סוג 4", "סוג 5"];
+const yValues = [55, 49, 44, 24, 15];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+
+    datasets: [
+      {
+        backgroundColor: barColors,
+        data: yValues,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      xAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            reverse: true,
+          },
+        },
+      ],
+    },
+
+    legend: {
+      display: false,
+    },
+    title: {
+      display: true,
+      text: "סטטיסטיקה",
+    },
+  },
+});

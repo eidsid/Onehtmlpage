@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOOLS</title>
     <link rel="stylesheet" href="./Style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png" />
   </head>
   <body>
     <header>
@@ -51,76 +52,93 @@
 
       <section id="documents">
         <h2>מסמכים</h2>
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>כותרת</th>
-              <th>תיאור מקצועי</th>
-              <th>סוג קובץ</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src="images/personal-icon.png" alt="Personal Icon" />
-              </td>
-              <td>כותרת מסמך 1</td>
-              <td>תיאור מקצועי של מסמך 1</td>
-              <td>
-                <a href="file.pdf" target="_blank"
-                  ><img src="images/pdf-icon.png" alt="PDF Icon"
-                /></a>
-              </td>
-            </tr>
-            <tr>
-              <td><img src="images/group-icon.png" alt="Group Icon" /></td>
-              <td>כותרת מסמך 2</td>
-              <td>תיאור מקצועי של מסמך 2</td>
-              <td>
-                <a href="images/image-icon.png" target="_blank"
-                  ><img src="images/image-icon.png" alt="Image Icon"
-                /></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="documents-container">
+          <div class="document">
+            <div class="document-icon">
+              <img src="images/personal-icon.png" alt="Personal Icon" />
+            </div>
+            <div class="document-info">
+              <h3>כותרת מסמך 1</h3>
+              <p>תיאור מקצועי של מסמך 1</p>
+            </div>
+            <a href="file.pdf" target="_blank" class="download-btn">
+              <img src="images/pdf-icon.png" alt="PDF Icon" />
+              <span>הורדה</span>
+            </a>
+          </div>
+          <div class="document">
+            <div class="document-icon">
+              <img src="images/group-icon.png" alt="Group Icon" />
+            </div>
+            <div class="document-info">
+              <h3>כותרת מסמך 2</h3>
+              <p>תיאור מקצועי של מסמך 2</p>
+            </div>
+            <a
+              href="images/image-icon.png"
+              target="_blank"
+              class="download-btn"
+            >
+              <img src="images/image-icon.png" alt="Image Icon" />
+              <span>הורדה</span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section id="updates">
         <h2>עדכונים</h2>
-        <div class="card">
-          <h3>כותרת העדכון הראשון</h3>
-          <p>
-            פרטי העדכון הראשון יוצגו כאן. עדכון זה נוסף בתאריך 1 בינואר 2023.
-          </p>
-          <a href="#">קרא עוד</a>
-        </div>
-        <div class="card">
-          <h3>כותרת העדכון השני</h3>
-          <p>
-            פרטי העדכון השני יוצגו כאן. עדכון זה נוסף בתאריך 15 בפברואר 2023.
-          </p>
-          <a href="#">קרא עוד</a>
-        </div>
-        <div class="card">
-          <h3>כותרת העדכון השלישי</h3>
-          <p>פרטי העדכון השלישי יוצגו כאן. עדכון זה נוסף בתאריך 1 במרץ 2023.</p>
-          <a href="#">קרא עוד</a>
+
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <h3>כותרת העדכון הראשון</h3>
+              <span>1 בינואר 2023</span>
+            </div>
+            <div class="card-body">
+              <p>
+                פרטי העדכון הראשון יוצגו כאן. עדכון זה נוסף בתאריך 1 בינואר
+                2023.
+              </p>
+              <a href="#">קרא עוד</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>כותרת העדכון השני</h3>
+              <span>15 בפברואר 2023</span>
+            </div>
+            <div class="card-body">
+              <p>
+                פרטי העדכון השני יוצגו כאן. עדכון זה נוסף בתאריך 15 בפברואר
+                2023.
+              </p>
+              <a href="#">קרא עוד</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3>כותרת העדכון השלישי</h3>
+              <span>1 במרץ 2023</span>
+            </div>
+            <div class="card-body">
+              <p>
+                פרטי העדכון השלישי יוצגו כאן. עדכון זה נוסף בתאריך 1 במרץ 2023.
+              </p>
+              <a href="#">קרא עוד</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="status">
         <h2 class="title">סטטוס</h2>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-badge">1</div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">כותרת אירוע 1</h4>
-                <p><small class="text-muted">20/06/2023</small></p>
-              </div>
-              <div class="timeline-body">
+        <div class="timeline">
+          <div class="outer">
+            <div class="card">
+              <div class="info">
+                <h3 class="title">כותרת אירוע 1</h3>
+                <span class="time"> 20/06/2023 </span>
                 <p>
                   האירוע יתקיים ביום חמישי ה-20.6 בשעה 19:00 במכון התרבות.
                   תתקיים חלוקת שוברי מזון וכוכבי סלבריטאים. אנו מזמינים את כל
@@ -128,42 +146,52 @@
                 </p>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="timeline-badge">2</div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">כותרת אירוע 2</h4>
-                <p><small class="text-muted">15/06/2023</small></p>
-              </div>
-              <div class="timeline-body">
+            <div class="card">
+              <div class="info">
+                <h3 class="title">כותרת אירוע 2</h3>
+                <span class="time"> 20/06/2023 </span>
                 <p>
-                  האירוע השנתי שלנו חוזר! ביום שבת ה-15 ביוני נפגוש כדי לחגוג את
-                  הקיץ הקרוב ולהנות מהמוזיקה הכי טובה שיש. האירוע יתקיים בפארק
-                  העצמאות בחיפה משעה 18:00 עד חצות, ויכלול הופעות חיות של להקות
-                  מובילות ודיג'יים מפורסמים. אל תפספסו!
+                  האירוע יתקיים ביום חמישי ה-20.6 בשעה 19:00 במכון התרבות.
+                  תתקיים חלוקת שוברי מזון וכוכבי סלבריטאים. אנו מזמינים את כל
+                  המתעניינים להצטרף אלינו וליהנות מחוויה בלתי נשכחת!
                 </p>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="timeline-badge">3</div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">כותרת אירוע 3</h4>
-                <p><small class="text-muted">10/06/2023</small></p>
-              </div>
-              <div class="timeline-body">
+            <div class="card">
+              <div class="info">
+                <h3 class="title">כותרת אירוע 3</h3>
+                <span class="time"> 20/06/2023 </span>
                 <p>
-                  אנו מזמינים אתכם להצטרף אלינו ביום רביעי ה-10 ביוני לסדנת
-                  יצירה חדשה. הסדנה תתקיים במרכז האמנויות החדש בעיר ירושלים משעה
-                  16:00 עד 18:00. נלמד יחד טכניקות יצירה חדשות ונייצר אומנות
-                  ייחודית שלנו. אין צורך בניסיון קודם - כל הרמות מוזמנות להשתתף!
+                  האירוע יתקיים ביום חמישי ה-20.6 בשעה 19:00 במכון התרבות.
+                  תתקיים חלוקת שוברי מזון וכוכבי סלבריטאים. אנו מזמינים את כל
+                  המתעניינים להצטרף אלינו וליהנות מחוויה בלתי נשכחת!
                 </p>
               </div>
             </div>
-          </li>
-        </ul>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">כותרת אירוע 4</h3>
+                <span class="time"> 20/06/2023 </span>
+                <p>
+                  האירוע יתקיים ביום חמישי ה-20.6 בשעה 19:00 במכון התרבות.
+                  תתקיים חלוקת שוברי מזון וכוכבי סלבריטאים. אנו מזמינים את כל
+                  המתעניינים להצטרף אלינו וליהנות מחוויה בלתי נשכחת!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 class="title">כותרת אירוע 5</h3>
+                <span class="time"> 20/06/2023 </span>
+                <p>
+                  האירוע יתקיים ביום חמישי ה-20.6 בשעה 19:00 במכון התרבות.
+                  תתקיים חלוקת שוברי מזון וכוכבי סלבריטאים. אנו מזמינים את כל
+                  המתעניינים להצטרף אלינו וליהנות מחוויה בלתי נשכחת!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="gallery">
@@ -201,29 +229,7 @@
       </section>
 
       <section id="statistics">
-        <h2>סטטיסטיקה</h2>
-        <div class="chart">
-          <div class="column">
-            <div class="chart-label">סוג 1</div>
-            <div class="chart-bar"></div>
-          </div>
-          <div class="column">
-            <div class="chart-label">סוג 2</div>
-            <div class="chart-bar"></div>
-          </div>
-          <div class="column">
-            <div class="chart-label">סוג 3</div>
-            <div class="chart-bar"></div>
-          </div>
-          <div class="column">
-            <div class="chart-label">סוג 4</div>
-            <div class="chart-bar"></div>
-          </div>
-          <div class="column">
-            <div class="chart-label">סוג 5</div>
-            <div class="chart-bar"></div>
-          </div>
-        </div>
+        <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
       </section>
     </main>
     <footer>
@@ -236,6 +242,8 @@
         </ul>
       </div>
     </footer>
+    <button id="to-top-btn" title="Go to top">Top</button>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <script src="script.js"></script>
 </html>
