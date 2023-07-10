@@ -584,12 +584,14 @@ footer {
   border: none;
   border-radius: 50%;
   background-color: #333;
+  opacity: 0.7;
   color: #fff;
   font-size: 24px;
   line-height: 50px;
   text-align: center;
   cursor: pointer;
   z-index: 9999;
+  transition: 0.5s ease-in-out all;
 }
 
 #to-top-btn.show {
@@ -597,7 +599,7 @@ footer {
 }
 
 #to-top-btn:hover {
-  background-color: #555;
+  opacity: 1;
 }
 
 .show-to-top-btn {
