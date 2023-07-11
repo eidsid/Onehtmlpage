@@ -80,7 +80,18 @@ nav.menu a:hover {
   border-radius: 5px;
 }
 
+/* Media query for tablet */
+
+@media only screen and (max-width: 860px) and (min-width: 768px) {
+  .project-name {
+    font-size: 19px;
+  }
+  nav.menu li {
+    margin-left: 10px;
+  }
+}
 /* Media query for mobile */
+
 @media only screen and (max-width: 768px) {
   .menu-icon img {
     display: block;
