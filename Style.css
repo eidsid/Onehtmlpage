@@ -280,90 +280,49 @@ section h2 {
   color: #333;
 }
 
-.documents-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.document {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  padding: 1rem;
-}
-
-.document:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.document-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.documents-table {
   width: 100%;
-  height: 150px;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.document-icon img {
-  max-height: 80px;
-  max-width: 80px;
-}
-
-.document-info {
+.documents-table th,
+.documents-table td {
+  padding: 10px;
   text-align: center;
-  padding: 20px;
 }
 
-.document-info h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
+.documents-table th:first-child,
+.documents-table td:first-child {
+  width: 50px;
 }
 
-.document-info p {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.download-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+.documents-table th {
   background-color: #0077c2;
   color: #fff;
-  padding: 10px 20px;
+}
+
+.documents-table td {
+  border: 1px solid #ccc;
+}
+
+.documents-table a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0077c2;
+  color: #fff;
+  text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.download-btn:hover {
+.documents-table a:hover {
   background-color: #005c99;
 }
 
-.download-btn img {
-  max-width: 20px;
-  margin-right: 10px;
-}
-
-.download-btn span {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.document a img {
-  margin-left: 1rem;
+.documents-table img {
+  max-height: 80px;
+  max-width: 80px;
 }
 
 /* satus Timeline styles */

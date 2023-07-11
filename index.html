@@ -52,38 +52,40 @@
 
       <section id="documents">
         <h2>מסמכים</h2>
-        <div class="documents-container">
-          <div class="document">
-            <div class="document-icon">
-              <img src="images/personal-icon.png" alt="Personal Icon" />
-            </div>
-            <div class="document-info">
-              <h3>כותרת מסמך 1</h3>
-              <p>תיאור מקצועי של מסמך 1</p>
-            </div>
-            <a href="file.pdf" target="_blank" class="download-btn">
-              <img src="images/pdf-icon.png" alt="PDF Icon" />
-              <span>הורדה</span>
-            </a>
-          </div>
-          <div class="document">
-            <div class="document-icon">
-              <img src="images/group-icon.png" alt="Group Icon" />
-            </div>
-            <div class="document-info">
-              <h3>כותרת מסמך 2</h3>
-              <p>תיאור מקצועי של מסמך 2</p>
-            </div>
-            <a
-              href="images/image-icon.png"
-              target="_blank"
-              class="download-btn"
-            >
-              <img src="images/image-icon.png" alt="Image Icon" />
-              <span>הורדה</span>
-            </a>
-          </div>
-        </div>
+        <table class="documents-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>כותרת</th>
+              <th>תיאור</th>
+              <th>קובץ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/personal-icon.png" alt="Personal Icon" />
+              </td>
+              <td>כותרת מסמך 1</td>
+              <td>תיאור מקצועי של מסמך 1</td>
+              <td>
+                <a href="file.pdf" target="_blank"
+                  ><img src="images/pdf-icon.png" alt="PDF Icon"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="images/group-icon.png" alt="Group Icon" /></td>
+              <td>כותרת מסמך 2</td>
+              <td>תיאור מקצועי של מסמך 2</td>
+              <td>
+                <a href="images/image-icon.png" target="_blank"
+                  ><img src="images/image-icon.png" alt="Image Icon"
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section id="updates">
