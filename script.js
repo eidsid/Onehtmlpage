@@ -64,7 +64,7 @@ toTopBtn.addEventListener("click", () => {
 
 // for chart
 const barColors = "gray";
-const xValues = ["סוג 1", "סוג 2", "סוג 3", "סוג 4", "סוג 5"];
+const xValues = ["نوع 1", "نوع 2", "نوع 3", "نوع 4", "نوع 5"];
 const yValues = [55, 49, 44, 24, 15];
 
 new Chart("myChart", {
@@ -96,7 +96,7 @@ new Chart("myChart", {
     },
     title: {
       display: true,
-      text: "סטטיסטיקה",
+      text: "الاحصائيات",
     },
   },
 });
